@@ -8,7 +8,7 @@ public class Non_SubscibersPassengers extends Passenger{
     }
 
     public void reserveCar(Car car)throws Exception{
-    if(car.getMaxPassengers()==0) throw new Exception("Dear user "+super.getName()+", you can't reserve car "+car.getCarCode()+". it has no available seats right right now.");
+    if(car.getMaxPassengers()==0) throw new Exception("Dear user "+super.getName()+", you can't reserve car "+car.getCarCode()+". it has no available seats right now.");
 
     super.setReservedCar(car);
     if(hasDiscount)
@@ -26,6 +26,6 @@ public class Non_SubscibersPassengers extends Passenger{
 
     public String hasCoupon(){
     if(hasDiscount) return " has coupon ";
-    return " does not has coupon ";
+    return " does not have coupon ";
     }
 }

@@ -5,7 +5,7 @@ public class SubscribersPassengers extends Passenger{
     }
 
     public void reserveCar(Car car)throws Exception{
-     if(car.getMaxPassengers()==0) throw new Exception("Dear user "+super.getName()+", you can't reserve car "+car.getCarCode()+". it has no available seats right right now.");
+     if(car.getMaxPassengers()==0) throw new Exception("Dear user "+super.getName()+", you can't reserve car "+car.getCarCode()+". it has no available seats right now.");
 
      super.setReservedCar(car);
      super.setTripCost(car.rout.getTripPrice()*0.5);

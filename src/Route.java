@@ -13,4 +13,12 @@ private double tripPrice;
     public double getTripPrice() {
         return tripPrice;
     }
+
+    public String getPickAddress() {
+        return pickAddress;
+    }
+
+    public String getDestinationAddress() {
+        return destinationAddress;
+    }
 }
